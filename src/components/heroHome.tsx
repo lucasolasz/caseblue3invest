@@ -1,12 +1,13 @@
 import BtnAbraSuaConta from "./btnAbraSuaConta";
 import Image from "next/image";
 
-export default function Hero() {
+export default function HeroHome() {
   return (
-    <div className="relative h-[90vh] bg-[#000d38] rounded-br-4xl text-center overflow-hidden">
-      <div className="grid md:grid-cols-2 h-full">
-        <div className="flex flex-col justify-center m-20">
-          <h1 className="text-white text-4xl font-extrabold pt-12 ">
+    <div className="h-[90vh] bg-[#000d38] rounded-br-4xl overflow-hidden">
+      <div className="h-full grid">
+        {/* coluna 1  */}
+        <div className="flex flex-col items-center mt-10 text-center">
+          <h1 className="text-white text-4xl font-extrabold">
             Invista na sua{" "}
           </h1>
           <h1 className="text-blue-500 text-4xl font-extrabold">jornada</h1>
@@ -17,11 +18,13 @@ export default function Hero() {
           </p>
           <BtnAbraSuaConta></BtnAbraSuaConta>
         </div>
-        <div className="md:flex md:flex-col md:justify-center">
+        {/* coluna 2  */}
+
+        <div className="flex items-center justify-center">
           <img
-            className="absolute h-[90vh] w-[90vh]"
-            src="/assets/fundo-linhas-azul-home.png"
-            alt="Header Home"
+            className="w-[50vh]"
+            src="/assets/header-home-mulher-mobile.png"
+            alt="Womam Home"
           />
         </div>
       </div>
