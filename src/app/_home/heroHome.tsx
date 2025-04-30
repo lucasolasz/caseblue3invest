@@ -32,9 +32,9 @@ export default function HeroHome() {
           </div>
 
           {/* Quadrado amarelo sobreposto */}
-          <div className="absolute">
+          <div className="absolute md:h-[90vh]">
             <img
-              className="w-[50vh] md:w-[90vh]"
+              className="w-[50vh] md:w-[90%] bg-transparent"
               src="/assets/header-home-mulher-mobile.png"
               alt="Womam Home"
             />
