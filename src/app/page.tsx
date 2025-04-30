@@ -1,13 +1,9 @@
-import HeroHome from "@/app/_home/heroHome";
-import Hero from "@/app/_home/heroHome";
-import Jornada from "@/app/_home/jornada";
-import { Navbar } from "@/components/navbar";
+import HomePage from "./_home/homePage";
 
 export default function Home() {
   return (
     <div>
-      <HeroHome />
-      <Jornada />
+      <HomePage />
     </div>
   );
 }
