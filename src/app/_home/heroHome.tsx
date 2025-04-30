@@ -1,4 +1,4 @@
-import BtnAbraSuaConta from "./btnAbraSuaConta";
+import BtnAbraSuaConta from "../../components/btnAbraSuaConta";
 import Image from "next/image";
 
 export default function HeroHome() {
@@ -21,11 +21,22 @@ export default function HeroHome() {
         {/* coluna 2  */}
 
         <div className="flex items-center justify-center">
-          <img
-            className="w-[50vh]"
-            src="/assets/header-home-mulher-mobile.png"
-            alt="Womam Home"
-          />
+          <div>
+            <img
+              className="w-full h-full"
+              src="/assets/fundo-linhas-azul-home.png"
+              alt="Linhas no fundo"
+            />
+          </div>
+
+          {/* Quadrado amarelo sobreposto */}
+          <div className="absolute">
+            <img
+              className="w-[45vh]"
+              src="/assets/header-home-mulher-mobile.png"
+              alt="Womam Home"
+            />
+          </div>
         </div>
       </div>
     </div>
