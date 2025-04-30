@@ -5,7 +5,7 @@ export default function BtnAbraSuaConta({
 }) {
   return (
     <button
-      className={`bg-blue-500 px-10 py-3 rounded cursor-pointer duration-550 ${
+      className={`bg-blue-500 w-[200px] rounded cursor-pointer duration-550 ${
         isTransparent
           ? "bg-transparent border-blue-500 border-2 font-bold text-blue-500 hover:bg-blue-950"
           : "text-white hover:bg-blue-900"

@@ -3,42 +3,37 @@ import Image from "next/image";
 
 export default function HeroHome() {
   return (
-    <div className="h-[90vh] bg-[#000d38] rounded-br-4xl overflow-hidden">
-      <div className="h-full grid md:grid-cols-2 justify-center">
-        {/* coluna 1  */}
-
-        <div className="flex flex-col items-center text-center md:text-left justify-center mt-10 md:mt-0">
-          <div className="md:m-36">
-            <h1 className="text-white text-4xl md:text-6xl font-extrabold">
-              Invista na sua <span className="text-blue-500 ">jornada</span>
-            </h1>
-            <p className="text-white my-6 px-12 md:text-xl md:my-4 md:px-0">
-              Seja qual for o seu momento de vida,{" "}
-              <b>estaremos lado a lado para te guiar</b> na sua jornada de
-              investimentos.
-            </p>
-            <BtnAbraSuaConta isTransparent={true} />
-          </div>
+    <div className="h-[75vh] w-full bg-[#000d38] rounded-br-4xl overflow-hidden">
+      <div className="h-full flex">
+        <div className="flex flex-col justify-center md:pr-10 md:pl-90 md:max-w-3xl ">
+          <h1 className="text-white text-4xl md:text-6xl font-extrabold">
+            Invista na sua <span className="text-blue-500">jornada</span>
+          </h1>
+          <p className="text-white my-6 md:text-xl md:my-4 md:px-0">
+            Seja qual for o seu momento de vida,{" "}
+            <b>estaremos lado a lado para te guiar</b> na sua jornada de
+            investimentos.
+          </p>
+          <BtnAbraSuaConta isTransparent={true} />
         </div>
-        {/* coluna 2  */}
-
-        <div className="flex items-center justify-center">
-          <div>
-            <img
-              className="w-full h-full"
-              src="/assets/fundo-linhas-azul-home.png"
-              alt="Linhas no fundo"
-            />
-          </div>
-
-          {/* Quadrado amarelo sobreposto */}
-          <div className="absolute md:h-[90vh]">
-            <img
-              className="w-[50vh] md:w-[90%] bg-transparent"
-              src="/assets/header-home-mulher-mobile.png"
-              alt="Womam Home"
-            />
-          </div>
+        {/* coluna 2 */}
+        <div className="relative w-full h-full">
+          {/* fundo de linhas azuis */}
+          <Image
+            src="/assets/fundo-linhas-azul-home.png"
+            alt="Linhas no fundo"
+            fill
+            className="object-cover bg-transparent"
+            priority
+          />
+          {/* imagem da mulher por cima */}
+          <Image
+            src="/assets/header-home-lg.png"
+            alt="Womam Home"
+            fill
+            className="object-contain z-10"
+            priority
+          />
         </div>
       </div>
     </div>
