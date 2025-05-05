@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function HeroHome() {
   return (
-    <div className="h-[75vh] w-full bg-[#000d38] rounded-br-4xl overflow-hidden flex justify-end">
+    <div className="h-[677px] w-full bg-[#000d38] rounded-br-[80px] overflow-hidden flex justify-end">
       <div className="flex items-center gap-5">
-        <div className="md:max-w-[400px]">
+        <div className="md:max-w-[400px] md:m-10">
           <h1 className="text-white text-4xl md:text-6xl font-extrabold">
             Invista na sua <span className="text-blue-500">jornada</span>
           </h1>
@@ -16,13 +16,20 @@ export default function HeroHome() {
           </p>
           <BtnAbraSuaConta isTransparent={true} />
         </div>
-        <div className="h-full md:max-w-[1240px]">
+        <div className="md:h-full md:max-w-fit relative">
           <Image
             src="/assets/fundo-linhas-azul-home.png"
-            alt="Womam Home"
+            alt="Linhas azuis de fundo"
             width={1000}
             height={1000}
-            className="w-full h-full z-2"
+            className="md:w-full md:h-full"
+          />
+          <Image
+            src="/assets/header-home-lg.png" // Substitua pelo caminho da nova imagem
+            alt="Mulher frente"
+            width={1000} // Ajuste o tamanho conforme necessário
+            height={1000}
+            className="absolute md:bottom-0 md:h-full md:max-w-[897px]"
           />
         </div>
       </div>
