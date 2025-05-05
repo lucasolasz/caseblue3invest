@@ -4,12 +4,18 @@ import BtnSite from "./btnSite";
 import { IoIosArrowDown } from "react-icons/io";
 import { useState } from "react";
 import SubMenuParaVoce from "./submenuParaVoce";
+import SubMenuABlue3 from "./subMenuABlue3";
 
 export function Navbar() {
   const [paraVoceSubMenuActive, setParaVoceSubMenuActive] = useState(false);
+  const [aBlue3MenuActive, setABlue3Active] = useState(false);
 
   const handleParaVoceSubMenuActive = () => {
     setParaVoceSubMenuActive(!paraVoceSubMenuActive);
+  };
+
+  const handleABlue3SubMenuActive = () => {
+    setABlue3Active(!aBlue3MenuActive);
   };
 
   return (
@@ -41,7 +47,12 @@ export function Navbar() {
                 Para sua empresa{" "}
               </a>
             </li>
-            <li className="md:flex md:gap-2">
+            <li
+              className={`md:flex md:gap-2 ${
+                aBlue3MenuActive && "text-blue-500"
+              }`}
+              onMouseEnter={handleABlue3SubMenuActive}
+            >
               A Blue3{" "}
               <IoIosArrowDown
                 size={20}
@@ -60,6 +71,11 @@ export function Navbar() {
       <SubMenuParaVoce
         paraVoceSubMenuActive={paraVoceSubMenuActive}
         handleParaVoceSubMenuActive={handleParaVoceSubMenuActive}
+      />
+
+      <SubMenuABlue3
+        aBlue3MenuActive={aBlue3MenuActive}
+        handleABlue3SubMenuActive={handleABlue3SubMenuActive}
       />
     </div>
   );
