@@ -1,4 +1,4 @@
-import BtnAbraSuaConta from "../../components/btnAbraSuaConta";
+import BtnSite from "../../components/btnSite";
 import Image from "next/image";
 
 export default function HeroHome() {
@@ -14,7 +14,7 @@ export default function HeroHome() {
             <b>estaremos lado a lado para te guiar</b> na sua jornada de
             investimentos.
           </p>
-          <BtnAbraSuaConta isTransparent={true} />
+          <BtnSite isTransparent={true}> Abra sua conta</BtnSite>
         </div>
         <div className="md:h-full md:max-w-fit relative">
           <Image

@@ -1,4 +1,4 @@
-import BtnAbraSuaConta from "@/components/btnAbraSuaConta";
+import BtnAbraSuaConta from "@/components/btnSite";
 import Image from "next/image";
 
 export default function Hero() {
