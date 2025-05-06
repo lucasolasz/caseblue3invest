@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroHome() {
   return (
-    <div className="h-[677px] w-full bg-[#000d38] rounded-br-[80px] overflow-hidden flex justify-end">
+    <div className="h-[677px] w-full bg-[#000d38] rounded-br-[80px] md:overflow-hidden flex justify-end">
       <div className="flex items-center gap-5">
         <div className="md:max-w-[400px] md:m-10">
           <h1 className="text-white text-4xl md:text-6xl font-extrabold">

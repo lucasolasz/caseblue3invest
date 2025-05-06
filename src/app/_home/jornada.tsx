@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Jornada() {
   return (
-    <div className="h-screen py-14 px-10">
+    <div className="h-screen py-10 px-5">
       <h1 className="text-3xl font-extrabold text-blue-500">
         A sua jornada começa aqui e agora
       </h1>
@@ -31,7 +31,7 @@ export default function Jornada() {
         que você acumulou e preservou trabalhar para você.
       </p>
       <Image
-        className="mx-auto my-10"
+        className="mx-auto my-10 md:hidden"
         src="/assets/jornada_mobile.png"
         alt="Analytics"
         width={500}
