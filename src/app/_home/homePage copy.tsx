@@ -1,15 +1,11 @@
-import AlemDosNumeros from "./alemDosNumeros";
 import HeroHome from "./heroHome";
 import Jornada from "./jornada";
-import Oportunidades from "./oportunidades";
 
 export default function HomePage() {
   return (
     <div>
       <HeroHome />
       <Jornada />
-      <Oportunidades />
-      <AlemDosNumeros />
     </div>
   );
 }
