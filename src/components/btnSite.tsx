@@ -7,7 +7,7 @@ export default function BtnSite({
 }) {
   return (
     <button
-      className={`bg-blue-500 w-[200px] h-[50px] rounded cursor-pointer duration-550 ${
+      className={`bg-blue-500 h-[50px] !px-10 rounded cursor-pointer duration-550 !m-0 ${
         isTransparent
           ? "bg-transparent border-blue-500 border-2 font-bold text-blue-500 hover:bg-transparent"
           : "text-white hover:bg-blue-900"
