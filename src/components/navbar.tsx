@@ -63,8 +63,12 @@ export function Navbar() {
         </div>
 
         <div className="flex gap-4 ml-auto ">
-          <BtnSite isTransparent={true}> Fale Conosco</BtnSite>
-          <BtnSite isTransparent={false}> Abra sua conta</BtnSite>
+          <BtnSite isTransparent={true} width="w-[250px]">
+            Fale Conosco
+          </BtnSite>
+          <BtnSite isTransparent={false} width="w-[250px]">
+            Abra sua conta
+          </BtnSite>
         </div>
       </div>
 
