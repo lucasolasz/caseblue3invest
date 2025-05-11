@@ -2,7 +2,7 @@ import { FaPlus } from "react-icons/fa";
 
 export default function AlemDosNumeros() {
   return (
-    <div className="h-[350px] bg-[#000d38] flex items-center">
+    <div className="h-[400px] bg-[#000d38] flex items-center pb-10">
       <div className="md:max-w-[1140px] mx-auto w-full h-[70%] flex">
         <div className="w-full">
           <div className="max-w-[430px]">

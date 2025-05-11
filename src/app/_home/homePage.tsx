@@ -2,6 +2,7 @@ import AlemDosNumeros from "./alemDosNumeros";
 import HeroHome from "./heroHome";
 import Jornada from "./jornada";
 import Oportunidades from "./oportunidades";
+import OQueFazemos from "./oQueFazemos";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
       <Jornada />
       <Oportunidades />
       <AlemDosNumeros />
+      <OQueFazemos />
     </div>
   );
 }
