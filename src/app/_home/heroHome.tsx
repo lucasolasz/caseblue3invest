@@ -25,7 +25,7 @@ export default function HeroHome() {
             <b>estaremos lado a lado para te guiar</b> na sua jornada de
             investimentos.
           </p>
-          <BtnSite isTransparent={true} width="w-[250px]">
+          <BtnSite isTransparent={true} width="w-[185px]">
             Abra sua conta
           </BtnSite>
         </div>

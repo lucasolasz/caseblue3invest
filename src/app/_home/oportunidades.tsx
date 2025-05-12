@@ -14,7 +14,7 @@ export default function Oportunidades() {
           Oportunidades de investimentos para o seu perfil
         </h1>
 
-        <BtnSite isTransparent={false} width="w-[350px]">
+        <BtnSite isTransparent={false} width="w-[293px]">
           Fale com um acessor Blue3
         </BtnSite>
       </div>

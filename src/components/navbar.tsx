@@ -31,7 +31,7 @@ export function Navbar() {
           />
           <ul className="md:flex md:gap-8 md:ml-25 text-blue-900">
             <li
-              className={`md:flex md:gap-2 ${
+              className={`md:flex md:gap-1 md:items-center ${
                 paraVoceSubMenuActive && "text-blue-500"
               }`}
               onMouseEnter={handleParaVoceSubMenuActive}
@@ -48,7 +48,7 @@ export function Navbar() {
               </a>
             </li>
             <li
-              className={`md:flex md:gap-2 ${
+              className={`md:flex md:gap-1 md:items-center ${
                 aBlue3MenuActive && "text-blue-500"
               }`}
               onMouseEnter={handleABlue3SubMenuActive}
@@ -62,11 +62,11 @@ export function Navbar() {
           </ul>
         </div>
 
-        <div className="flex gap-4 ml-auto ">
-          <BtnSite isTransparent={true} width="w-[250px]">
+        <div className="flex gap-6 ml-auto mr-10">
+          <BtnSite isTransparent={true} width="w-[165px]">
             Fale Conosco
           </BtnSite>
-          <BtnSite isTransparent={false} width="w-[250px]">
+          <BtnSite isTransparent={false} width="w-[165px]">
             Abra sua conta
           </BtnSite>
         </div>
