@@ -1,4 +1,5 @@
 import AlemDosNumeros from "./alemDosNumeros";
+import Blue3Imprensa from "./blue3Imprensa";
 import ExperienciaClientes from "./experienciaClientes";
 import HeroHome from "./heroHome";
 import Jornada from "./jornada";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <AlemDosNumeros />
       <OQueFazemos />
       <ExperienciaClientes />
+      <Blue3Imprensa />
     </div>
   );
 }
