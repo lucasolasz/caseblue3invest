@@ -5,6 +5,7 @@ import HeroHome from "./heroHome";
 import Jornada from "./jornada";
 import Oportunidades from "./oportunidades";
 import OQueFazemos from "./oQueFazemos";
+import PreFooter from "./preFooter";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <OQueFazemos />
       <ExperienciaClientes />
       <Blue3Imprensa />
+      <PreFooter />
     </div>
   );
 }
