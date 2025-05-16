@@ -12,7 +12,7 @@ export default function SlideImpresa() {
       <SwiperSlide
         key={1}
         virtualIndex={1}
-        className="rounded-2xl shadow-2xl p-8 !w-[359px] !h-[296px]"
+        className="rounded-2xl border p-8 !w-[359px] !h-[296px]"
       >
         {/* Div interna */}
         <div className="flex flex-col h-full">

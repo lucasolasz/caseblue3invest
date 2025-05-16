@@ -22,7 +22,7 @@ export default function Blue3Imprensa() {
           </BtnSlide>
         </div>
 
-        <div className="h-[396px]">
+        <div className="relative bottom-10">
           <SlideImpresa />
         </div>
       </div>
